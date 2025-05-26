@@ -15,7 +15,7 @@
                 </div>
             @endif
 
-            <form action="{{ route('students.store') }}" method="POST" class="form-horizontal">
+            <form action="{{ route('students.store') }}" method="POST" enctype="multipart/form-data" class="form-horizontal">
                 @csrf
                 <div class="form-floating mb-3">
                     <input type="text" name="name" id="name" class="form-control" value="{{ old('name') }}" placeholder="Enter name">
@@ -32,6 +32,10 @@
                 <div class="form-floating mb-3">
                     <input type="text" name="major" id="major" class="form-control" value="{{ old('major') }}" placeholder="Enter major">
                     <label for="major" class="form-label">Major:</label>
+                </div>
+                <div class="mb-3">
+                    <label for="profile_image" class="form-label">Profile Image:</label>
+                    <input type="file" name="profile_image" id="profile_image" class="form-control">
                 </div>
                 <div class="mt-4">
                     <button type="submit" class="btn btn-primary me-2">

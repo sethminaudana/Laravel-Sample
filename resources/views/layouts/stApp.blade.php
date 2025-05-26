@@ -74,6 +74,14 @@
             border-radius: 0.5rem;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+        .profile-image-large { /* For the show view display */
+            width: 200px; /* Adjusted size */
+            height: 200px; /* Adjusted size */
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #66b0ff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body class="bg-light">

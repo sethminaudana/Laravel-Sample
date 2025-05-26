@@ -25,6 +25,9 @@ Route::get('/students/{student}', [StudentController::class, 'show'])->name('stu
 Route::get('/students/{student}/edit', [StudentController::class, 'edit'])->name('students.edit');
 Route::put('/students/{student}', [StudentController::class, 'update'])->name('students.update');
 Route::delete('/students/{student}', [StudentController::class, 'destroy'])->name('students.destroy');
+// New route for downloading the report
+Route::get('/students/report/csv', [StudentController::class, 'downloadReportCsv'])->name('students.report.csv');
+
 
 
 require __DIR__.'/auth.php';

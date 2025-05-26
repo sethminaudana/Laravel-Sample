@@ -10,6 +10,6 @@ class Student extends Model
     //
     use HasFactory;
 
-    protected $fillable = ['name', 'email', 'date_of_birth', 'major']; // Added $fillable for mass assignment
+    protected $fillable = ['name', 'email', 'date_of_birth', 'major', 'profile_image']; // Added $fillable for mass assignment
 
 }
